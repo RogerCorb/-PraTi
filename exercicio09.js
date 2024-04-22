@@ -14,7 +14,6 @@ matriz[7] = [25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41,
 const codigoProduto = parseInt(prompt('Digite o codigo de Origem.: '));
 let index;
 let regiaoEncontrada = '';
-let achou = false;
 
 if (codigoProduto > 20 && codigoProduto < 25 || codigoProduto > 50) {
     console.log('Fora dos Intervalos, Produto Importado');
@@ -23,13 +22,10 @@ if (codigoProduto > 20 && codigoProduto < 25 || codigoProduto > 50) {
 
     for (const vetorIterator of matriz) {       
         index = vetorIterator.find(element=>element===codigoProduto) 
-        if (index) {
-            achou = true; 
+        if (index) {           
             regiaoEncontrada = vetorIterator[vetorIterator.length-1];
-        } 
-        if (achou) {
             break;
-        }
+        }        
     }   
     console.log(regiaoEncontrada);
 }
