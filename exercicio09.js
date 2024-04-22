@@ -21,15 +21,15 @@ if (codigoProduto > 20 && codigoProduto < 25 || codigoProduto > 50) {
 
 } else {
 
-    for (const vetorIterator of matriz) {
-        if (achou) {
-            break;
-        }
+    for (const vetorIterator of matriz) {       
         index = vetorIterator.find(element=>element===codigoProduto) 
         if (index) {
             achou = true; 
             regiaoEncontrada = vetorIterator[vetorIterator.length-1];
         } 
+        if (achou) {
+            break;
+        }
     }   
     console.log(regiaoEncontrada);
 }
