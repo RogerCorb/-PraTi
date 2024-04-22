@@ -2,7 +2,6 @@ const prompt = require("prompt-sync")();
 
 const matriz = new Array();
 let index = 1;
-let somaNotas = 0;
 let somaPeso = 0;
 let nota = 0;
 let peso = 0;
@@ -28,11 +27,10 @@ while (index === 1) {
 
 while (index < matriz.length) {
     nota = matriz[index][0];
-    peso = matriz[index][1];    
-    somaNotas += nota;
+    peso = matriz[index][1];   
     somaPeso += peso;    
     multiplica += nota*peso;    
     index++;
 }
-console.log(`A soma dos produtos é ${multiplica} e a soma dos pesos é ${somaPeso}`);
+console.log(`A soma dos produtos é ${multiplica.toFixed(2)} e a soma dos pesos é ${somaPeso}`);
 console.log(`A média ponderada para os numeros digitados é ${(multiplica/somaPeso).toFixed(2)}`);
