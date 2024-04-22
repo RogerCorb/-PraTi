@@ -1,5 +1,5 @@
 
-<img src="/imagemCabecalho.PNG"  width="auto" alt="Cabeçalho " title="Banner Codifica Edu " >
+<img src="/imagemCabecalho.PNG"  width=100% alt="Cabeçalho " title="Banner Codifica Edu " >
   
 
 
