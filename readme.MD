@@ -4,3 +4,5 @@ valor correspondente em graus Fahrenheit
 ![alt text][def]
 
 [def]: image-2.png
+
+C:\Users\roger\Documents\+praTi\imagemCabecalho.PNG
