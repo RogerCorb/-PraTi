@@ -1,11 +1,9 @@
 const prompt = require("prompt-sync")();
 
-const vetor = new Array(4);
-
-let numberOne   = Number(prompt('Digite o primeiro numero inteiro.: ')); //vetor[0]
-let numberTwo   = Number(prompt('Digite o segundo numero inteiro.: ')); // vetor[1]
-let numberThree = Number(prompt('Digite o terceiro numero inteiro.: ')); // vetor[2]
-let numberFour  = Number(prompt('Digite o quarto numero inteiro.: ')); //vetor[3]
+let numberOne   = Number(prompt('Digite o primeiro numero inteiro.: ')); 
+let numberTwo   = Number(prompt('Digite o segundo numero inteiro.: ')); 
+let numberThree = Number(prompt('Digite o terceiro numero inteiro.: '));
+let numberFour  = Number(prompt('Digite o quarto numero inteiro.: ')); 
 let soma = 0;
 
 numberOne += 25;
