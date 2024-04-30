@@ -1,18 +1,36 @@
 const prompt = require("prompt-sync")();
 
-const vetorVariavelN = new Array(5);
+const numberOne = parseInt(prompt('Digite o primeiro numero inteiro.: '));
+const numberTwo  = parseInt(prompt('Digite o segundo numero inteiro.: '));
+const numberThree = parseInt(prompt('Digite o terceiro numero inteiro.: '));
+const numberFour  = parseInt(prompt('Digite o quarto numero inteiro.: '));
+const numberFive  = parseInt(prompt('Digite o quinto numero inteiro.: '));
 
-vetorVariavelN[0] = parseInt(prompt('Digite o primeiro numero inteiro.: '));
-vetorVariavelN[1] = parseInt(prompt('Digite o segundo numero inteiro.: '));
-vetorVariavelN[2] = parseInt(prompt('Digite o terceiro numero inteiro.: '));
-vetorVariavelN[3] = parseInt(prompt('Digite o quarto numero inteiro.: '));
-vetorVariavelN[4] = parseInt(prompt('Digite o quarto numero inteiro.: '));
-
-let variavelN = 0; 
-for (let i = 0; i < vetorVariavelN.length; i++) {
-    variavelN = vetorVariavelN[i];
-    console.log(`**** Tabuada de ${variavelN} ****`)
-    for (let j = 1; j <= variavelN; j++) {
-        console.log(`${j} x ${variavelN} = ${j*variavelN}`);
-    }
+for (let i = 0; i < 5; i++) {
+    if(i == 0) { 
+        console.log(`**** Tabuada de ${ numberOne } ****`);
+        for (let j = 1; j <= numberOne; j++) {
+            console.log(`${j} x ${numberOne} = ${ j*numberOne }`);
+        }
+    } else if(i == 1) { 
+        console.log(`**** Tabuada de ${ numberTwo } ****`);
+        for (let j = 1; j <= numberTwo; j++) {
+            console.log(`${j} x ${ numberTwo } = ${ j*numberTwo }`);
+        }
+    } else if(i == 2) { 
+        console.log(`**** Tabuada de ${ numberThree } ****`);
+        for (let j = 1; j <= numberThree; j++) {
+            console.log(`${j} x ${ numberThree } = ${ j*numberThree }`);
+        }
+    } else if(i == 3) { 
+        console.log(`**** Tabuada de ${ numberFour } ****`);
+        for (let j = 1; j <= numberFour; j++) {
+            console.log(`${j} x ${numberFour} = ${ j*numberFour }`);
+        }
+    } else if(i == 4) { 
+        console.log(`**** Tabuada de ${ numberFive } ****`);
+        for (let j = 1; j <= numberFive; j++) {
+            console.log(`${j} x ${numberFive} = ${ j*numberFive }`);
+        }
+    } 
 }

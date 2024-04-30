@@ -1,6 +1,5 @@
 const prompt = require("prompt-sync")();
 
-
 let i = 0;
 let tipoNumero = "";
 while (i === 0) { 

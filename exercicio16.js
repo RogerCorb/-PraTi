@@ -1,17 +1,19 @@
 let numero = 100;
 let contCinquenta = 0;
+let achou;
 
 while (numero >= 100 && contCinquenta < 50) {
     let cPlusPlus = 2;    
-    const vetorResult = [];
+    let resultado; 
     while( cPlusPlus <= Math.sqrt(numero) ) {         
-        vetorResult.push(numero%cPlusPlus);
-        cPlusPlus++;
-    }
-    const resultado = vetorResult.find(element=>element==0);
-    if (resultado===undefined) {
+      resultado = numero%cPlusPlus;
+      cPlusPlus++;
+      achou = resultado === 0 ? false : true ; 
+      if(!achou){ break }      
+    }  
+    if(achou) { 
         contCinquenta++;
-        console.log(`${contCinquenta} - Numero Primo Encontrado-> ${numero}`);                  
+        console.log(`${contCinquenta} - Numero Primo Encontrado-> ${numero}`);        
     }
     numero++;    
 }

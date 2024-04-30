@@ -1,21 +1,19 @@
 const prompt = require("prompt-sync")();
 
-const vetor = new Array(2);
+let numberOne=numberTwo=0;// const //vetor = new Array(2);
 
-vetor[0]=vetor[1]=0;
+while ( numberOne === numberTwo ) { 
 
-while ( vetor[0] === vetor[1] ) { 
+    numberOne = parseInt(prompt('Digite um numero inteiro.: '));
+    numberTwo = parseInt(prompt('Digite outro numero inteiro.:'));
 
-    vetor[0] = parseInt(prompt('Digite um numero inteiro.: '));
-    vetor[1] = parseInt(prompt('Digite outro numero inteiro.:'));
-
-    if(vetor[0] === vetor[1]) { 
+    if( numberOne === numberTwo ) { 
         console.log('Por favor digite numeros diferentes...');
     } else { 
-        if (vetor[0] < vetor[1]) {
-            console.log(vetor[0] , vetor[1]);
+        if ( numberOne < numberTwo ) {
+            console.log( numberOne , numberTwo );
         } else { 
-            console.log(vetor[1] , vetor[0]);
+            console.log( numberTwo , numberOne );
         }        
     }
 }
