@@ -3,10 +3,9 @@ let contCinquenta = 0;
 let achou;
 
 while (numero >= 100 && contCinquenta < 50) {
-    let cPlusPlus = 2;    
-    let resultado; 
+    let cPlusPlus = 2;        
     while( cPlusPlus <= Math.sqrt(numero) ) {         
-      resultado = numero%cPlusPlus;
+      const resultado = numero%cPlusPlus;
       cPlusPlus++;
       achou = resultado === 0 ? false : true ; 
       if(!achou){ break }      
